@@ -1,0 +1,9 @@
+{
+  "observations": "/content/AvianTrack/experiments/prediction/observations/bahgoo_observations_with_suitability.parquet",
+  "monthly": "/content/AvianTrack/experiments/spatiotemporal/bahgoo_monthly_distribution.csv",
+  "seasonal": "/content/AvianTrack/experiments/spatiotemporal/bahgoo_seasonal_distribution.csv",
+  "centroids": "/content/AvianTrack/experiments/spatiotemporal/bahgoo_migration_centroids_by_month.csv",
+  "hotspots": "/content/AvianTrack/experiments/spatiotemporal/bahgoo_hotspots_by_season.csv",
+  "validation": "/content/AvianTrack/experiments/spatiotemporal/bahgoo_suitability_validation_summary.json",
+  "features": "/content/AvianTrack/experiments/final_models/bahgoo_final_feature_columns.json"
+}

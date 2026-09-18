@@ -1,0 +1,12 @@
+{
+  "species_code": "bahgoo",
+  "scientific_name": "Anser indicus",
+  "common_name": "Bar-headed Goose",
+  "observation_count": 54809,
+  "dated_observation_count": 39991,
+  "model_features": 32,
+  "models": [
+    "Random Forest",
+    "XGBoost"
+  ]
+}

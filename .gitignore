@@ -1,0 +1,80 @@
+# ============================================================
+# AvianTrack GitHub .gitignore
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# ---------- Virtual environments ----------
+venv/
+.venv/
+env/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Node / React ----------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# ---------- Environment / secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Large raw datasets ----------
+raw/
+data/raw/
+
+# ---------- Large data files ----------
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.sqlite
+*.db
+
+# ---------- Raster / GIS ----------
+*.tif
+*.tiff
+*.vrt
+*.img
+*.gpkg
+
+# ---------- Trained models ----------
+*.joblib
+*.pkl
+*.pickle
+
+# ---------- Archives ----------
+*.zip
+*.tar
+*.gz
+*.7z
+
+# ---------- Generated experiment outputs ----------
+experiments/
+
+# ---------- Temporary / logs ----------
+*.tmp
+*.temp
+*.log
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+
+# ---------- Colab ----------
+*.ipynb_checkpoints/
+
+# ---------- Local runtime ----------
+/content/

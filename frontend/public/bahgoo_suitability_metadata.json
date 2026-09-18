@@ -1,0 +1,22 @@
+{
+  "file": "bahgoo_ensemble_suitability.png",
+  "species": "Anser indicus",
+  "species_common_name": "Bar-headed Goose",
+  "crs": "EPSG:4326",
+  "width": 1477,
+  "height": 1116,
+  "bounds": {
+    "west": 67.4166666667,
+    "south": 7.0416666667,
+    "east": 128.9583333334,
+    "north": 53.5416666667
+  },
+  "suitability": {
+    "minimum": 0.00046771072084084153,
+    "maximum": 0.9996213912963867,
+    "mean": 0.1202651783823967
+  },
+  "valid_cells": 978951,
+  "nodata_cells": 669381,
+  "description": "Continuous ensemble habitat suitability prediction from Random Forest and XGBoost models. Values represent modelled relative suitability and should not be interpreted as guaranteed species presence."
+}

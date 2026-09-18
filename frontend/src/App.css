@@ -1,0 +1,1720 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+
+
+/* =============================================================
+   GLOBAL
+============================================================= */
+
+:root {
+
+  font-family:
+    "DM Sans",
+    system-ui,
+    sans-serif;
+
+  color: #17313a;
+
+  background: #f4f8f7;
+
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f4f8f7;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+button {
+  font: inherit;
+}
+
+
+/* =============================================================
+   NAVBAR
+============================================================= */
+
+.navbar {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid #dce8e5;
+}
+
+
+.nav-container {
+
+  max-width: 1240px;
+
+  margin: auto;
+
+  padding: 17px 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+
+.brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.brand-icon {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 12px;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #17313a;
+
+  color: white;
+}
+
+
+.brand-name {
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 800;
+}
+
+
+.brand-subtitle {
+
+  margin-top: 2px;
+
+  font-size: 11px;
+
+  color: #71858a;
+}
+
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 27px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #526a70;
+}
+
+
+.nav-links a:hover {
+  color: #17313a;
+}
+
+
+.menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+/* =============================================================
+   HERO
+============================================================= */
+
+.hero {
+
+  padding: 82px 28px 70px;
+
+  background:
+    radial-gradient(
+      circle at 82% 20%,
+      #d9eee9 0,
+      transparent 32%
+    ),
+    #f4f8f7;
+}
+
+
+.hero-container {
+
+  max-width: 1240px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1.4fr 0.8fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+.eyebrow,
+.section-label {
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+
+  color: #63877f;
+}
+
+
+.hero h1 {
+
+  max-width: 720px;
+
+  margin: 17px 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: clamp(42px, 5.2vw, 72px);
+
+  line-height: 1.03;
+
+  letter-spacing: -2.5px;
+
+  color: #17313a;
+}
+
+
+.hero h1 span {
+  color: #4c7c70;
+}
+
+
+.hero-text > p {
+
+  max-width: 650px;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+
+  color: #62777c;
+}
+
+
+.hero-actions {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 30px;
+}
+
+
+.primary-button,
+.secondary-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 13px 18px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+.primary-button {
+
+  background: #17313a;
+
+  color: white;
+}
+
+
+.secondary-button {
+
+  border: 1px solid #cadbd7;
+
+  background: white;
+
+  color: #36545a;
+}
+
+
+.species-card {
+
+  padding: 34px;
+
+  border-radius: 22px;
+
+  background: white;
+
+  border: 1px solid #dce8e5;
+
+  box-shadow:
+    0 20px 55px rgba(31, 64, 70, 0.08);
+}
+
+
+.species-label {
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 800;
+
+  color: #75918a;
+}
+
+
+.species-bird {
+
+  margin: 23px 0 7px;
+
+  font-size: 65px;
+}
+
+
+.species-card h2 {
+
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 25px;
+}
+
+
+.scientific-name {
+
+  margin-top: 5px;
+
+  color: #75918a;
+
+  font-style: italic;
+}
+
+
+.species-divider {
+
+  height: 1px;
+
+  margin: 22px 0;
+
+  background: #e3ece9;
+}
+
+
+.species-card > p:last-child {
+
+  margin: 0;
+
+  color: #667b80;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =============================================================
+   STATS
+============================================================= */
+
+.stats-section {
+
+  padding: 0 28px 70px;
+
+  background: #f4f8f7;
+}
+
+
+.stats-container {
+
+  max-width: 1240px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+.stat-card {
+
+  padding: 23px;
+
+  display: flex;
+
+  gap: 15px;
+
+  background: white;
+
+  border: 1px solid #dce8e5;
+
+  border-radius: 15px;
+}
+
+
+.stat-icon {
+
+  width: 40px;
+
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: #edf5f2;
+
+  color: #4c7c70;
+}
+
+
+.stat-label {
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+
+  color: #829498;
+}
+
+
+.stat-value {
+
+  margin-top: 5px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 26px;
+
+  font-weight: 800;
+}
+
+
+.stat-description {
+
+  margin-top: 4px;
+
+  font-size: 12px;
+
+  color: #7a8d91;
+}
+
+
+/* =============================================================
+   SECTIONS
+============================================================= */
+
+.content-section,
+.analytics-section {
+
+  max-width: 1240px;
+
+  margin: auto;
+
+  padding: 70px 28px;
+}
+
+
+.section-heading {
+
+  display: flex;
+
+  align-items: end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 28px;
+}
+
+
+.section-heading h2,
+.habitat-card h2,
+.about-section h2 {
+
+  margin: 8px 0 8px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 34px;
+
+  letter-spacing: -1px;
+}
+
+
+.section-heading p {
+
+  margin: 0;
+
+  color: #71858a;
+
+  line-height: 1.6;
+}
+
+
+.filter-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 14px;
+
+  border: 1px solid #d4e2df;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #45636a;
+
+  cursor: pointer;
+}
+
+
+/* =============================================================
+   MAP
+============================================================= */
+
+.map-placeholder {
+
+  height: 550px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid #cddeda;
+
+  border-radius: 18px;
+
+  background: #dceae6;
+}
+
+
+.map-grid {
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: 0.4;
+
+  background-image:
+    linear-gradient(
+      #a5c0b9 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      #a5c0b9 1px,
+      transparent 1px
+    );
+
+  background-size: 70px 70px;
+}
+
+
+.map-message {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: min(420px, 80%);
+
+  padding: 30px;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.93);
+
+  border: 1px solid #d4e2df;
+
+  border-radius: 17px;
+
+  box-shadow: 0 15px 40px rgba(35,70,72,0.08);
+}
+
+
+.map-icon {
+
+  width: 54px;
+
+  height: 54px;
+
+  margin: auto;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 15px;
+
+  background: #edf5f2;
+
+  color: #4c7c70;
+}
+
+
+.map-message h3 {
+
+  margin: 17px 0 6px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 21px;
+}
+
+
+.map-message p {
+
+  margin: 0;
+
+  color: #708388;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+}
+
+
+.map-message span {
+
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  background: #eef5f3;
+
+  color: #68837b;
+
+  font-size: 11px;
+}
+
+
+/* =============================================================
+   ANALYTICS
+============================================================= */
+
+.analytics-section {
+
+  max-width: none;
+
+  padding-left: max(28px, calc((100vw - 1184px) / 2));
+
+  padding-right: max(28px, calc((100vw - 1184px) / 2));
+
+  background: #edf4f1;
+}
+
+
+.analytics-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 17px;
+}
+
+
+.analytics-card {
+
+  min-height: 390px;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  background: white;
+
+  border: 1px solid #d7e4e0;
+}
+
+
+.analytics-card-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  color: #668078;
+}
+
+
+.analytics-card-header span {
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+.analytics-card-header h3 {
+
+  margin: 6px 0 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 20px;
+
+  color: #17313a;
+}
+
+
+.chart-placeholder {
+
+  height: 260px;
+
+  margin-top: 25px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 11px;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      #f3f7f5,
+      #f3f7f5 1px,
+      transparent 1px,
+      transparent 52px
+    );
+
+  color: #91a4a0;
+
+  font-size: 13px;
+}
+
+
+/* =============================================================
+   HABITAT
+============================================================= */
+
+.habitat-card {
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 30px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: white;
+
+  border: 1px solid #dce8e5;
+}
+
+
+.habitat-text {
+
+  padding: 18px;
+}
+
+
+.habitat-card p {
+
+  max-width: 480px;
+
+  color: #71858a;
+
+  line-height: 1.75;
+}
+
+
+.model-tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 25px;
+}
+
+
+.model-tags span {
+
+  padding: 7px 10px;
+
+  border-radius: 7px;
+
+  background: #edf5f2;
+
+  color: #52776d;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.suitability-placeholder {
+
+  min-height: 340px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 15px;
+
+  background: #dfece8;
+}
+
+
+.suitability-inner {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #4f716a;
+
+}
+
+
+.suitability-inner strong {
+  font-family: "Manrope", sans-serif;
+}
+
+
+.suitability-inner span {
+
+  font-size: 12px;
+
+  color: #78918a;
+}
+
+
+/* =============================================================
+   ABOUT
+============================================================= */
+
+.about-section {
+
+  padding: 70px 28px;
+
+  background: #17313a;
+
+  color: white;
+}
+
+
+.about-container {
+
+  max-width: 1184px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+.about-section .section-label {
+  color: #91b5aa;
+}
+
+
+.about-section h2 {
+
+  max-width: 500px;
+
+  font-size: 39px;
+
+  color: white;
+}
+
+
+.about-container > p {
+
+  margin: 0;
+
+  color: #b9cdca;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+}
+
+
+/* =============================================================
+   FOOTER
+============================================================= */
+
+footer {
+
+  background: #11272e;
+
+  color: #9bb2b0;
+}
+
+
+.footer-container {
+
+  max-width: 1184px;
+
+  margin: auto;
+
+  padding: 23px 28px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  font-size: 12px;
+}
+
+
+.footer-container div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.footer-container strong {
+  color: white;
+}
+
+
+/* =============================================================
+   RESPONSIVE
+============================================================= */
+
+@media (max-width: 900px) {
+
+  .nav-links {
+
+    display: none;
+
+    position: absolute;
+
+    top: 76px;
+
+    left: 0;
+
+    right: 0;
+
+    padding: 20px 28px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    background: white;
+
+    border-bottom: 1px solid #dce8e5;
+  }
+
+
+  .nav-links.open {
+    display: flex;
+  }
+
+
+  .menu-button {
+    display: block;
+  }
+
+
+  .hero-container {
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  .stats-container {
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .analytics-grid,
+  .habitat-card,
+  .about-container {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .about-container {
+    gap: 25px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .nav-container {
+    padding: 14px 18px;
+  }
+
+
+  .hero {
+
+    padding: 55px 18px;
+  }
+
+
+  .hero h1 {
+
+    font-size: 42px;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .hero-actions {
+
+    flex-direction: column;
+  }
+
+
+  .primary-button,
+  .secondary-button {
+
+    justify-content: center;
+  }
+
+
+  .stats-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+
+  .content-section,
+  .analytics-section {
+
+    padding-left: 18px;
+
+    padding-right: 18px;
+  }
+
+
+  .section-heading {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .map-placeholder {
+    height: 430px;
+  }
+
+
+  .species-card {
+    padding: 25px;
+  }
+
+
+  .footer-container {
+
+    flex-direction: column;
+
+    padding-left: 18px;
+
+    padding-right: 18px;
+  }
+
+}
+
+
+/* =============================================================
+   API ERROR
+============================================================= */
+
+.api-error {
+
+  padding: 10px 20px;
+
+  text-align: center;
+
+  background: #fff2f0;
+
+  color: #9b3d32;
+
+  border-bottom: 1px solid #f0cbc5;
+
+  font-size: 13px;
+
+}
+
+
+/* =============================================================
+   MAP FILTERS
+============================================================= */
+
+.map-filters {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 10px;
+
+  border: 1px solid #d4e2df;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #5e7773;
+
+}
+
+
+.map-filters select {
+
+  border: 0;
+
+  outline: 0;
+
+  background: transparent;
+
+  color: #405c61;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.map-status {
+
+  margin-bottom: 10px;
+
+  font-size: 12px;
+
+  color: #71858a;
+
+}
+
+
+.real-map {
+
+  height: 550px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  border: 1px solid #cddeda;
+
+  background: #dceae6;
+
+}
+
+
+.real-map .leaflet-container {
+
+  width: 100%;
+
+  height: 100%;
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+}
+
+
+/* =============================================================
+   CHART
+============================================================= */
+
+.chart-container {
+
+  width: 100%;
+
+  height: 280px;
+
+  margin-top: 20px;
+
+}
+
+
+.centroid-summary {
+
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 10px;
+
+  margin-top: 45px;
+
+  color: #71858a;
+
+}
+
+
+.centroid-number {
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 58px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  color: #17313a;
+
+}
+
+
+.centroid-note {
+
+  max-width: 500px;
+
+  margin-top: 35px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  background: #f1f6f4;
+
+  color: #657a7e;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+}
+
+
+/* =============================================================
+   HABITAT STAT
+============================================================= */
+
+.habitat-stat {
+
+  margin-top: 25px;
+
+  padding: 15px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-radius: 10px;
+
+  background: #f1f6f4;
+
+}
+
+
+.habitat-stat strong {
+
+  max-width: 220px;
+
+  font-size: 12px;
+
+  color: #58716c;
+
+}
+
+
+.habitat-stat span {
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  color: #17313a;
+
+}
+
+
+/* =============================================================
+   MOBILE MAP
+============================================================= */
+
+@media (max-width: 700px) {
+
+  .map-filters {
+
+    width: 100%;
+
+    flex-wrap: wrap;
+
+  }
+
+
+  .map-filters select {
+
+    flex: 1;
+
+  }
+
+
+  .real-map {
+
+    height: 450px;
+
+  }
+
+
+  .chart-container {
+
+    height: 240px;
+
+  }
+
+}
+
+
+/* =============================================================
+   REAL AVIANTRACK MAP
+============================================================= */
+
+.map-wrapper {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+
+.suitability-legend {
+
+  position: absolute;
+
+  z-index: 1000;
+
+  left: 14px;
+
+  bottom: 22px;
+
+  width: 150px;
+
+  padding: 11px 12px;
+
+  border-radius: 9px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.94
+  );
+
+  border: 1px solid #d5e2df;
+
+  box-shadow:
+    0 5px 20px
+    rgba(
+      25,
+      55,
+      60,
+      0.12
+    );
+
+}
+
+
+.legend-title {
+
+  margin-bottom: 7px;
+
+  color: #35565d;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+}
+
+
+.legend-gradient {
+
+  height: 9px;
+
+  border-radius: 5px;
+
+  background:
+    linear-gradient(
+      to right,
+      #440154,
+      #31688e,
+      #35b779,
+      #fde725
+    );
+
+}
+
+
+.legend-values {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 4px;
+
+  color: #71858a;
+
+  font-size: 9px;
+
+}
+
+
+.observation-popup {
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+}
+
+
+.observation-popup hr {
+
+  border: 0;
+
+  border-top: 1px solid #e2eae8;
+
+  margin: 7px 0;
+
+}
+
+
+@media (max-width: 700px) {
+
+  .suitability-legend {
+
+    left: 10px;
+
+    bottom: 15px;
+
+    width: 130px;
+
+  }
+
+}
+
+
+/* ============================================================
+   HABITAT SUITABILITY MAP
+   ============================================================ */
+
+.habitat-map-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.habitat-leaflet-map {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border-radius: 20px;
+}
+
+.habitat-map-legend {
+  position: absolute;
+  left: 16px;
+  bottom: 18px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 14px;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px rgba(20, 50, 60, 0.16);
+  min-width: 155px;
+}
+
+.habitat-legend-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.habitat-gradient {
+  width: 100%;
+  height: 11px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    #440154,
+    #31688e,
+    #35b779,
+    #fde725
+  );
+}
+
+.habitat-legend-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 11px;
+  color: #607880;
+}
+
+
+
+/* ============================================================
+   MODEL VALIDATION
+   ============================================================ */
+
+.model-performance {
+  margin-top: 22px;
+  padding: 18px;
+  border: 1px solid #dfe9e7;
+  border-radius: 16px;
+  background: #f8fbfa;
+}
+
+.model-performance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.model-performance-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #56827c;
+  margin-bottom: 4px;
+}
+
+.model-performance-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #19343d;
+}
+
+.feature-count {
+  padding: 6px 9px;
+  border-radius: 8px;
+  background: #e8f2ef;
+  color: #47736c;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.model-performance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.model-performance-card {
+  padding: 12px 10px;
+  border-radius: 11px;
+  background: white;
+  border: 1px solid #e1ebe9;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.model-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: #607880;
+}
+
+.model-performance-card strong {
+  font-size: 22px;
+  line-height: 1.1;
+  color: #19343d;
+}
+
+.model-performance-card small {
+  font-size: 9px;
+  color: #7a9095;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.model-performance-note {
+  margin: 13px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #6d8388;
+}
+
+
+/* ============================================================
+   SUITABILITY EXPLANATION
+   ============================================================ */
+
+.suitability-explanation {
+  margin-top: 16px;
+}
+
+.suitability-explanation strong {
+  display: block;
+  font-size: 13px;
+  color: #28464e;
+  margin-bottom: 5px;
+}
+
+.suitability-explanation p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.55;
+  color: #71868b;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+  .model-performance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .model-performance-header {
+    flex-direction: column;
+  }
+
+}
