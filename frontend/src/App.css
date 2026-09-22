@@ -2154,3 +2154,163 @@ footer {
   }
 
 }
+
+
+
+/* ==========================================================
+   METHODOLOGY SECTION
+========================================================== */
+
+.methodology-section {
+  padding: 96px 0;
+  background: #f7faf8;
+}
+
+.methodology-header {
+  max-width: 1180px;
+  margin: 0 auto 42px;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: end;
+}
+
+.methodology-header h2 {
+  margin: 10px 0 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.methodology-header > p {
+  margin: 0;
+  max-width: 520px;
+  color: #66736d;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.methodology-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.methodology-card {
+  position: relative;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e2ebe6;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(36, 67, 56, 0.05);
+}
+
+.methodology-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 28px;
+  margin-bottom: 22px;
+  border-radius: 999px;
+  background: #e7f1ed;
+  color: #4c7c70;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.methodology-card h3 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.methodology-card p {
+  margin: 0;
+  color: #68756f;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.methodology-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.methodology-tags span {
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #f0f5f2;
+  color: #4c6d63;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.methodology-note {
+  max-width: 1180px;
+  margin: 24px auto 0;
+  padding: 0 32px;
+}
+
+.methodology-note > div {
+  background: #edf5f1;
+}
+
+.methodology-note {
+  background: #edf5f1;
+  border: 1px solid #dcebe4;
+  border-radius: 18px;
+  padding: 24px 28px;
+}
+
+.methodology-note strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #315e51;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.methodology-note p {
+  margin: 0;
+  color: #5f6f68;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   METHODOLOGY RESPONSIVE
+========================================================== */
+
+@media (max-width: 800px) {
+
+  .methodology-section {
+    padding: 72px 0;
+  }
+
+  .methodology-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 22px;
+  }
+
+  .methodology-grid {
+    grid-template-columns: 1fr;
+    padding: 0 22px;
+  }
+
+  .methodology-note {
+    margin-left: 22px;
+    margin-right: 22px;
+    padding: 22px;
+  }
+
+}
