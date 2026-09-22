@@ -304,6 +304,21 @@ function ObservationMap({
                           <div>
 
                             <strong>
+                              Year:
+                            </strong>{" "}
+
+                            {
+                              observation.observation_date
+                              ? observation.observation_date.slice(0, 4)
+                              : "Unknown"
+                            }
+
+                          </div>
+
+
+                          <div>
+
+                            <strong>
                               Latitude:
                             </strong>{" "}
 
@@ -330,7 +345,30 @@ function ObservationMap({
                           <div>
 
                             <strong>
-                              Ensemble suitability:
+                              Habitat suitability:
+                            </strong>{" "}
+
+                            {
+                              observation.ensemble_suitability
+                              == null
+
+                              ? "N/A"
+
+                              : `${(
+                                  Number(
+                                    observation.ensemble_suitability
+                                  ) * 100
+                                ).toFixed(1)}%`
+
+                            }
+
+                          </div>
+
+
+                          <div>
+
+                            <strong>
+                              Suitability score:
                             </strong>{" "}
 
                             {
