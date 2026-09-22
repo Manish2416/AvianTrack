@@ -130,6 +130,7 @@ def get_species():
 @app.get("/api/observations")
 def get_observations(
     month: int | None = None,
+    year: int | None = None,
     source: str | None = None,
     limit: int = 5000
 ):
@@ -158,6 +159,21 @@ def get_observations(
         df["OBS_DATE"],
         errors="coerce"
     )
+
+    # Year filter
+
+    if year is not None:
+
+        if year < 1900 or year > 2100:
+
+            raise HTTPException(
+                status_code=400,
+                detail="year must be between 1900 and 2100."
+            )
+
+        df = df[
+            df["OBS_DATE"].dt.year == year
+        ]
 
     # Month filter
 
