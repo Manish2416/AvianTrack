@@ -609,6 +609,19 @@ function App() {
 
               </select>
 
+              {(month || source) && (
+                <button
+                  type="button"
+                  className="filter-reset"
+                  onClick={() => {
+                    setMonth("");
+                    setSource("");
+                  }}
+                >
+                  Reset
+                </button>
+              )}
+
             </div>
 
           </div>
@@ -963,166 +976,6 @@ function App() {
 
 
             <HabitatSuitabilityMap />
-
-          </div>
-
-        </section>
-
-
-        {/* ==================================================
-            METHODOLOGY
-        =================================================== */}
-
-        <section
-          className="methodology-section"
-          id="methodology"
-        >
-
-          <div className="methodology-header">
-
-            <div>
-              <div className="section-label">
-                METHODOLOGY
-              </div>
-
-              <h2>
-                How AvianTrack works.
-              </h2>
-            </div>
-
-            <p>
-              AvianTrack combines biodiversity observations,
-              environmental data, spatial analysis and machine
-              learning to study bird distribution and habitat
-              suitability.
-            </p>
-
-          </div>
-
-
-          <div className="methodology-grid">
-
-            <div className="methodology-card">
-
-              <span className="methodology-number">
-                01
-              </span>
-
-              <h3>
-                Data Collection
-              </h3>
-
-              <p>
-                Bird occurrence records are collected from
-                eBird and GBIF. Environmental predictors include
-                temperature, precipitation, elevation and
-                land-cover information.
-              </p>
-
-              <div className="methodology-tags">
-                <span>eBird</span>
-                <span>GBIF</span>
-                <span>WorldClim</span>
-                <span>WorldCover</span>
-              </div>
-
-            </div>
-
-
-            <div className="methodology-card">
-
-              <span className="methodology-number">
-                02
-              </span>
-
-              <h3>
-                Spatial & Temporal Analysis
-              </h3>
-
-              <p>
-                Observations are analysed by month and season
-                to identify geographic redistribution, centroid
-                shifts and spatial concentration patterns.
-              </p>
-
-              <div className="methodology-tags">
-                <span>Monthly</span>
-                <span>Seasonal</span>
-                <span>Centroids</span>
-                <span>Hotspots</span>
-              </div>
-
-            </div>
-
-
-            <div className="methodology-card">
-
-              <span className="methodology-number">
-                03
-              </span>
-
-              <h3>
-                Habitat Modelling
-              </h3>
-
-              <p>
-                Random Forest, XGBoost and a MaxEnt-style
-                approach are used to model relative habitat
-                suitability from environmental and land-cover
-                features.
-              </p>
-
-              <div className="methodology-tags">
-                <span>Random Forest</span>
-                <span>XGBoost</span>
-                <span>MaxEnt</span>
-              </div>
-
-            </div>
-
-
-            <div className="methodology-card">
-
-              <span className="methodology-number">
-                04
-              </span>
-
-              <h3>
-                Validation & Explainability
-              </h3>
-
-              <p>
-                Spatial cross-validation is used to evaluate
-                model generalization, while SHAP helps explain
-                which features contribute to model predictions.
-              </p>
-
-              <div className="methodology-tags">
-                <span>Spatial CV</span>
-                <span>ROC-AUC</span>
-                <span>SHAP</span>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div className="methodology-note">
-
-            <strong>
-              Important interpretation
-            </strong>
-
-            <p>
-              Habitat suitability represents a modelled relative
-              suitability score and does not guarantee species
-              presence. Migration analysis describes population-level
-              observation patterns rather than individual bird GPS
-              tracks. SHAP values describe model contribution and
-              should not be interpreted as proof of biological
-              causation.
-            </p>
 
           </div>
 
