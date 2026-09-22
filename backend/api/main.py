@@ -4,6 +4,7 @@ import json
 
 import pandas as pd
 
+from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -420,3 +421,14 @@ def model_information():
             result["validation"] = json.load(f)
 
     return result
+
+
+# Serve React production frontend
+FRONTEND_DIST = PROJECT_DIR / "frontend" / "dist"
+
+if FRONTEND_DIST.exists():
+    app.mount(
+        "/",
+        StaticFiles(directory=FRONTEND_DIST, html=True),
+        name="frontend"
+    )
