@@ -40,6 +40,7 @@ import {
 
 import "./App.css";
 import HabitatSuitabilityMap from "./HabitatSuitabilityMap";
+import MigrationAnalytics from "./MigrationAnalytics";
 
 
 function StatCard({
@@ -617,7 +618,7 @@ function App() {
 
             {loading
               ? "Loading observations..."
-              : `${observations.length.toLocaleString()} observations displayed`
+              : `${observations.length.toLocaleString()} of 54,809 observations displayed`
             }
 
           </div>
@@ -661,8 +662,9 @@ function App() {
               </h2>
 
               <p>
-                Monthly observation activity from
-                the AvianTrack dataset.
+                Explore monthly and seasonal distribution,
+                geographic centroid shifts, and spatial
+                concentration patterns.
               </p>
 
             </div>
@@ -718,6 +720,7 @@ function App() {
 
                     <Bar
                       dataKey="observations"
+                      fill="#4c7c70"
                       radius={[
                         5,
                         5,
@@ -786,6 +789,8 @@ function App() {
             </div>
 
           </div>
+
+          <MigrationAnalytics />
 
         </section>
 
