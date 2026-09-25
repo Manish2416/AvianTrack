@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Large raw/data files
+raw/
+data/raw/
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.sqlite
+*.db
+
+# GIS / raster files
+*.tif
+*.tiff
+*.vrt
+*.img
+*.gpkg
+
+# ML models
+*.joblib
+*.pkl
+*.pickle
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.7z
+
+# Generated experiment outputs
+experiments/
+
+# Temporary/log files
+*.tmp
+*.temp
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Colab
+/content/
+
+
+# AvianTrack project datasets
+# Full datasets and environmental source files are kept on Google Drive.
+data/
+
+# Runtime process files
+*.pid
+
+# Local development logs
+*.log
+
+# Temporary backup / generated files
+backups/
+
+# Local frontend backup history
+frontend_backup_history/
